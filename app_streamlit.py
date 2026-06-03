@@ -47,7 +47,7 @@ petal_width = st.slider("Petal Width (cm)", 0.1, 2.5, 0.2)
 
 if st.button("Predict", type="primary"):
     features = [
-        sepal_length, sepal_width, petal_length, petal_width]]
+        sepal_length, sepal_width, petal_length, petal_width]
     try:
         result = invoke_endpoint(features)
     except NoCredentialsError:
